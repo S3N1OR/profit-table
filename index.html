@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- <div class="days">
+        <div class="day">1 день</div>
+        <div class="day">2 день</div>
+        <div class="day">3 день</div>
+        <div class="day">4 день</div>
+        <div class="day">5 день</div>
+        <div class="day">6 день</div>
+        <div class="day">7 день</div>
+        <div class="day">8 день</div>
+        <div class="day">9 день</div>
+        <div class="day">10 день</div>
+        <div class="day">11 день</div>
+        <div class="day">12 день</div>
+        <div class="day">13 день</div>
+        <div class="day">14 день</div>
+        <div class="day">15 день</div>
+      </div> -->
+
+      <div class="tables">
+        <table class="table table-titles">
+          <caption>
+            ㅤ
+          </caption>
+          <tr>
+            <td>Вложил</td>
+          </tr>
+          <tr>
+            <td>Итог</td>
+          </tr>
+          <tr>
+            <td>Расход</td>
+          </tr>
+          <tr>
+            <td>Прибыль</td>
+          </tr>
+        </table>
+        <table class="table">
+          <caption>
+            1 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="text"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(1)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(1)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(1)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            2 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(2)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(2)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(2)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            3 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(3)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(3)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(3)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            4 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(4)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(4)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(4)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            5 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(5)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(5)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(5)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            6 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(6)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(6)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(6)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            7 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(7)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(7)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(7)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            8 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(8)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(8)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(8)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            9 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(9)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(9)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(9)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            10 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(10)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(10)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(10)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            11 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(11)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(11)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(11)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            12 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(12)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(12)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(12)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            13 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(13)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(13)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(13)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            14 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(14)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(14)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(14)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+
+        <table class="table">
+          <caption>
+            15 день
+          </caption>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="invest-input"
+                class="invest-input"
+                oninput="calc(15)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="result-input"
+                class="result-input"
+                oninput="calc(15)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="number"
+                id="expense-input"
+                class="expense-input"
+                oninput="calc(15)"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="profit" id="profit-text"></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
